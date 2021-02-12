@@ -13,62 +13,124 @@ html {
 }
 body{
 	font-size:1.6rem;
-	line-height:1.5;
 	font-family: 'Permanent Marker', cursive;
 	background-color:ivory;
 }
+/*Header Section Styles*/
 header{
-	background:grey;
+	background-color: grey;
+}
+h1 {
+	font-size:4rem;
+	padding:1%;
 }
 
-/*Header Section Styles*/
-h1 {
-	font-size:5rem;
-	margin: 0 5%;
+h2 {
+	font-size:2.5rem;
 }
 nav {
 	display:flex;
-	padding:2% 0;
-	margin: 0 5%;
-}
-a {
+	flex-flow: row;
+	width:45%;
 	padding:1%;
-	width:10%;
+}
+
+nav a {
+	padding:1%;
+	width: 15%;
+	text-align:center;
+	align-content: center;
+	text-decoration:none;
+	background-color: honeydew;
+	border: 1px solid black;
+}
+.home {
+	padding:1%;
+	width: 15%;
+	text-align:center;
+	align-content: center;
+	text-decoration:none;
+	background-color:black;
+	color:white;
+	border: 1px solid black;
+}
+/*Main Section*/
+.info {
+	display:flex;
+	align-content: center;
+	justify-content: space-evenly;
+	width:95%;
+}
+
+.left{
+	width:40%;
+	padding:1%;}
+
+.right{
+	width:50%;
+	display: flex;
+	justify-content: center;
+}
+
+.t-bio{
+	display:flex;
+	flex-direction:column;
+	width:60%;
+	justify-content: flex-end;
+	}
+
+.t-bio * {
+	padding:2%
+}
+
+.t-bio a {
+	width: 30%;
 	text-align:center;
 	text-decoration:none;
 	background-color: honeydew;
 	border: 1px solid black;
 }
-/*Main Section*/
 
-.main {
+.main{
 	display:flex;
-	justify-content:space-between; 
-} 
-
-.t-img{
-	margin:2%;
+	justify-content:center;
+	align-items: center;
 }
-
-.t-bio {
-	margin:5%;
-}
-
-.t-bio a {
-	margin:5%;
-}
-.img-gallery {
+.img-gallery{
 	display:flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	width:90%;
 }
-.img-gallery img{
-	width:22%;
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-position:top;
-	margin: 1%;
-	image-rendering: auto;
+.img-caption{
+	display:flex;
+	flex-flow: column wrap;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	padding:2%;
+	width:25%;
+}
 
+footer {
+	display: flex;
+	flex-direction: column;
+	background-color: grey;
+	align-items: center;
+}
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact {
+	font-size:4rem;
+	padding: 5%;
+}
+
+.linkedIn {
+width:9%;
 }

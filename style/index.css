@@ -1,1 +1,74 @@
-/* Add CSS styling here */
+/* CSS reset */
+* { 
+    box-sizing: border-box;
+	margin:0;
+	padding:0;
+    border: 1px solid rgb(238, 5, 5);
+    max-width: 100%; 
+}
+
+/*General Styles*/
+html {
+    font-size:62.5%;
+}
+body{
+	font-size:1.6rem;
+	line-height:1.5;
+	font-family: 'Permanent Marker', cursive;
+	background-color:ivory;
+}
+header{
+	background:grey;
+}
+
+/*Header Section Styles*/
+h1 {
+	font-size:5rem;
+	margin: 0 5%;
+}
+nav {
+	display:flex;
+	padding:2% 0;
+	margin: 0 5%;
+}
+a {
+	padding:1%;
+	width:10%;
+	text-align:center;
+	text-decoration:none;
+	background-color: honeydew;
+	border: 1px solid black;
+}
+/*Main Section*/
+
+.main {
+	display:flex;
+	justify-content:space-between; 
+} 
+
+.t-img{
+	margin:2%;
+}
+
+.t-bio {
+	margin:5%;
+}
+
+.t-bio a {
+	margin:5%;
+}
+.img-gallery {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+}
+.img-gallery img{
+	width:22%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:top;
+	margin: 1%;
+	image-rendering: auto;
+
+}

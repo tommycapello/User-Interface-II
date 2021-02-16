@@ -50,7 +50,7 @@ table {
 *{
     box-sizing:border-box;
     max-width:100%;
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 
 /*General Styles*/
@@ -76,10 +76,16 @@ h2 {
 h3 {
 	font-size:2.5rem;
 }
+p{
+	font-size:2rem;
+}
+a{
+	font-size: 2rem;
+}
 nav {
 	display:flex;
 	flex-flow: row;
-	width:45%;
+	width:50%;
 	padding:1%;
 }
 section {
@@ -94,7 +100,7 @@ nav {
 
 }
 nav a {
-	width: 15%;
+	width: 20%;
 	padding:2%;
 	text-align:center;
 	text-decoration:none;
@@ -114,8 +120,8 @@ nav a {
 .left{
 	background-image: url('../images/shaun-alam-p0bbdyHWtZE-unsplash.jpg');
 	background-repeat: no-repeat;
-	background-position: center bottom;
-    background-size:cover;
+    background-position: bottom;
+	background-size: cover;
 	width:40%;}
 .right{
 	width:50%;
@@ -131,9 +137,10 @@ nav a {
 	padding:2%
 }
 .t-bio a {
-	width: 30%;
+	width: 40%;
 	background-color: honeydew;
 	border: 2px black solid;
+	text-align:center;499
 }
 .main{
 	display:flex;
@@ -150,12 +157,13 @@ nav a {
 	display:flex;
 	flex-direction: column;
 	text-align: center;
-	justify-content: center;
-	align-content: center;
 	padding:1%;
 	width:25%;
 }
 
+.img-caption img{
+	object-fit:contain;
+}
 footer {
 	display: flex;
 	justify-content: center;
@@ -201,13 +209,21 @@ nav a{
 	width:30%;
 }
 .info{
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	padding:2%;
+}
+.left,.right{
+	width:100%;
 }
 .left{
 	height:40vh;
+	background-position: bottom;
 }
 .t-bio{
 	align-items:center;
+	width: 100%;
 }
 .img-caption{
 	width:45%;
@@ -215,3 +231,16 @@ nav a{
 .linkedIn{
 	width:20%;
 }}
+
+@media(max-width:500px){
+nav a{
+	width:40%;
+}
+.img-gallery{
+	justify-content: space-evenly;
+}
+.linkedIn{
+	width:30%;
+}
+
+}
